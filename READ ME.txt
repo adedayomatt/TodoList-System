@@ -1,0 +1,43 @@
+GUIDE:
+
+	G1. Make sure you have a local server on your PC either xampp or wamp.
+ 	    If you don't have any, the run the xampp installer in resources/setup in this package to
+  	    install xampp.
+	    If you already have a local server on your PC, jump to G4,
+
+	G2. After installation, move all of the whole folder 'todo' into htdocs inside the xampp root folder (i.e move inside C:\xampp\htdocs)
+
+	G3. By default, the user that is configured for xampp server is 'root' with no password, you can go
+	   ahead to create a more secured account (optional) by:
+			i.   Go to the root of xampp that you installed (it is always in C:\xampp),
+			ii.  Open the phpMyAdmin  folder (C:\xampp\phpMyAdmin),
+			iii. Locate the config.inc.php script and open with an editor,
+			iv.  create a user by editing the value of $cfg['Servers'][$i]['user'] in line 20 
+			v.   create a password by editing the value of $cfg['Servers'][$i]['password'] in line 21
+			vi.  Save the script and close. There you go! You now have a secured account. 
+			
+
+
+	G4. Open the php script config.php in resources/php in this package and edit the variables. If you have created an 
+	   account in your server, input the created user and password. If not, leave the user to be 'root' with no password.
+	   Also input any name for the database . Leave the host as '127.0.0.1'.
+		
+		NOTE: ALL THESE INPUT MUST BE IN EITHER SINGLE OR DOUBLE QUOTE
+
+	G5. Now start the local server. To start the local server,
+		i.  Run xamp-control located inside the xampp root folder (i.e C:\xampp)
+		ii. start the Apache and mySQL by clicking the start button in front of each
+
+	G6. When the local server has been started, then everything is set. To run the application, open any browser (preferably chrome),
+	   enter the address 'localhost/todo' or '127.0.0.1/todo'.
+
+	G7. You should have the application running fine by now.
+
+
+		NOTE: This guide uses xampp, system of things and location of files might be different in other local servers.
+
+
+		INCASE OF ANY DIFFICULTY OR FURTHER ASSISTANCE, CONTACT ME ON 
+				
+									08139004572
+									adedayomatt@gmail.com
